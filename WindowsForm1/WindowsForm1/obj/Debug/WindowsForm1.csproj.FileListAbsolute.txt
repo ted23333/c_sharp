@@ -1,0 +1,9 @@
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\bin\Debug\WindowsForm1.exe
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\bin\Debug\WindowsForm1.pdb
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\obj\Debug\WindowsForm1.csprojResolveAssemblyReference.cache
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\obj\Debug\WindowsForm1.Form1.resources
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\obj\Debug\WindowsForm1.Properties.Resources.resources
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\obj\Debug\WindowsForm1.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\obj\Debug\WindowsForm1.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\obj\Debug\WindowsForm1.exe
+C:\Users\asus\source\repos\WindowsForm1\WindowsForm1\obj\Debug\WindowsForm1.pdb
