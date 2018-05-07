@@ -1,0 +1,6 @@
+C:\Users\asus\source\repos\CircleCrossover\CircleCrossover\bin\Debug\CircleCrossover.exe
+C:\Users\asus\source\repos\CircleCrossover\CircleCrossover\bin\Debug\CircleCrossover.pdb
+C:\Users\asus\source\repos\CircleCrossover\CircleCrossover\obj\Debug\CircleCrossover.csprojResolveAssemblyReference.cache
+C:\Users\asus\source\repos\CircleCrossover\CircleCrossover\obj\Debug\CircleCrossover.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\CircleCrossover\CircleCrossover\obj\Debug\CircleCrossover.exe
+C:\Users\asus\source\repos\CircleCrossover\CircleCrossover\obj\Debug\CircleCrossover.pdb
