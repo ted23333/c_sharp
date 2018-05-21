@@ -1,0 +1,6 @@
+C:\Users\asus\source\repos\new_crossover\new_crossover\bin\Debug\new_crossover.exe
+C:\Users\asus\source\repos\new_crossover\new_crossover\bin\Debug\new_crossover.pdb
+C:\Users\asus\source\repos\new_crossover\new_crossover\obj\Debug\new_crossover.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\new_crossover\new_crossover\obj\Debug\new_crossover.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\new_crossover\new_crossover\obj\Debug\new_crossover.exe
+C:\Users\asus\source\repos\new_crossover\new_crossover\obj\Debug\new_crossover.pdb
