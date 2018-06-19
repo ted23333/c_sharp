@@ -5,7 +5,7 @@ using System.Text;
 
 namespace pingmianjihe
 {
-    class Point       //定义点类
+     public class Point       //定义点类
     {
         private double x, y;
         public double X

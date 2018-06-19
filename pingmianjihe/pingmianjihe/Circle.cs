@@ -5,7 +5,7 @@ using System.Text;
 
 namespace pingmianjihe
 {
-    class Circle                                        //定义圆类
+     public class Circle                                        //定义圆类
     {
         private double x, y, r;
         public double X
@@ -15,21 +15,27 @@ namespace pingmianjihe
                 return x;
             }
             set
-            { x = value; }
+            {
+                x = value; 
+            }
         }
         public double Y { 
-            get {
+            get
+            {
                 return y;
             } 
-            set {
+            set
+            {
                 y = value;
             } 
         }
         public double  Radius {
-            get {
+            get
+            {
                 return r;
             }
-            set {
+            set 
+            {
                 r = value;
             }
         }
@@ -44,6 +50,7 @@ namespace pingmianjihe
             if (po.Length < 3)                                //两点无法拟合圆
             {
                 Console.WriteLine("无法生成一个圆");
+                //异常
             }
             else
             {

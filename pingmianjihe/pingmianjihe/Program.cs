@@ -9,16 +9,19 @@ namespace pingmianjihe
     {
         static void Main(string[] args)
         {
-            Point A = new Point(0, 0);
-            Point B = new Point(2, 0);
-            Point C = new Point(1, 1);
-            Point D = new Point(1, -1);
+            Point A = new Point(0,1);
+            Point B = new Point(0, 0);
+            Point C = new Point(1,0);
+            Point D = new Point(-1,0);
+            Line L = new Line(A,C);
+            Line L2 = new Line(D, A);
+            Calcu.LineandLine(L, L2);
             Circle CI=new Circle(A,B,C,D);
-            Console.WriteLine("{0},{1},{2}",CI.X,CI.Y,CI.Radius);
-            Cordinate.Xpoint = 0;
-            Line L = new Line(1,1,2,2);
-         
-            Console.WriteLine("{0}", L.ToString());
+   
+            Calcu.PointandLine(B,L);
+            
+    
+    
             Console.ReadKey();
             
         }
