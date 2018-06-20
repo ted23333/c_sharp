@@ -88,7 +88,7 @@ namespace pingmianjihe
                 c = -(a * X1 + b * Y1 + X2 + Y2) / N;
                 this.x = a / (-2);
                 this.y = b / (-2);
-                this.r = Math.Sqrt(a * a + b * b - 4 * c) / 2;
+                this.r = Math.Sqrt(a * a + b * b - 4 * c) / 2.0;
             }
         }
     }

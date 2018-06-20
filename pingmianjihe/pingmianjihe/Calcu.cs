@@ -20,7 +20,7 @@ namespace pingmianjihe
             //垂直平分线TwoPointperpendicularbisector
         }
 
-        public static void PointandLine(Point A, Line L)                        //点与线计算
+        public static double PointandLine(Point A, Line L)                        //点与线计算
         {
             Cordinate.MoveDist_X = L.Xpoint;
             Cordinate.MoveDist_Y = L.Ypoint;
@@ -65,6 +65,7 @@ namespace pingmianjihe
                 }
                 //通过平移旋转坐标变换求出关于直线对称的点
             }
+            return distance;
         }
 
         public static void PointandCircle(Point A, Circle C)
@@ -119,18 +120,33 @@ namespace pingmianjihe
                 MidY = MoveY / MoveAngle;
                 //利用旋转平移求得两条直线交点，因为两条直线斜率不同，因此MoveAngle必定不为零，即不会出现除以0的情况
             }
-            double MidLineAngle = L1.AccessAngle > L2.AccessAngle ? (L2.AccessAngle + 1 / 2 * IncludedAngle) :
-                (L1.AccessAngle + 1 / 2 * IncludedAngle);
-            //计算角平分线的角度angle
-            Line MidCrossLine = new Line(MidX, MidY, MidLineAngle);
+            double angle1 = L1.AccessAngle +0.5 * IncludedAngle;
+            double angle2 = L1.AccessAngle - 0.5 * IncludedAngle;
+            Line MidCrossLine1 = new Line(MidX, MidY, angle1 );
+            Line MidCrossLine2 = new Line(MidX, MidY, angle2);
+            //两条直线的角平分线 MidCrossLine
+      
         }
 
         public static void LineandCircle(Line L, Circle C)                       //线与圆计算
         {
             Point A = new Point(C.X, C.Y);
-            PointandLine(A, L);
+            double distance=PointandLine(A, L); 
             //求圆心到直线的距离
-
+            if(distance<=C.Radius)
+            {
+            Line Circle_Line = new Line(C.X, C.Y, L.AccessAngle + 90);
+            //Cir_Line是过圆心的Line L的垂直平分线
+            double IncludedAngle = Math.Acos(distance / C.Radius) / Math.PI * 180;
+            //过圆心与交点的两条直线与Cir_Line的夹角为IncludedAngle
+            Line Li1 = new Line(C.X, C.Y, Circle_Line.AccessAngle + IncludedAngle);
+            Line Li2 = new Line(C.X, C.Y, Circle_Line.AccessAngle - IncludedAngle);
+            //过圆心与直线与圆交点的两条直线
+            LineandLine(Li1, L);
+            LineandLine(Li2, L);
+                //对应的线与线的交点即为线与圆的交点
+            }
+          //圆与直线交点
 
         }
 
@@ -179,7 +195,7 @@ namespace pingmianjihe
             //过两个圆圆心的对称轴
             if (C1.Radius == C2.Radius)
             {
-                Line PoandPoLine = new Line(1 / 2 * (C1.X + C2.X), 1 / 2 * (C1.Y + C1.Y), (CirandCirLine.AccessAngle + 90));
+                Line PoandPoLine = new Line(0.5* (C1.X + C2.X), 0.5* (C1.Y + C1.Y), (CirandCirLine.AccessAngle + 90));
                 //如果两个圆半径相同，两个圆的圆心连线垂直平分线也是他的对称轴
                 // CirandCirLine    PoandPoLine是两个圆的对称轴
             }
@@ -304,7 +320,7 @@ namespace pingmianjihe
                 TangentLine5 = new Line(ans[0], ans[2], CirandCirLine.AccessAngle + 90);
             }
             #endregion
-        }
+        }                 //圆与圆计算
 
         static double[] Fun_cross(double x1, double y1, double x2, double y2, double r1, double r2, double dis)
         //定义使用余弦定理计算圆交点的函数Fun_cross
